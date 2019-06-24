@@ -1,0 +1,41 @@
+﻿@model IEnumerable<WebApplicationExcoticMandi.Models.Order>
+
+@{
+    ViewBag.Title = "Index4";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Index4</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.ActionLink("Total", "Index4", new { sortOrder = ViewBag.TotalSortParm })
+        </th>
+        <th>
+            @Html.ActionLink("Order Date", "Index4", new { sortOrder = ViewBag.OrderDateSortParm })
+        </th>
+        
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Total)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderDate)
+            </td>
+            
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.OrderId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.OrderId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.OrderId })
+            </td>
+        </tr>
+    }
+
+</table>
+
+

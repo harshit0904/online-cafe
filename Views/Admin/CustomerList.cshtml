@@ -1,0 +1,44 @@
+﻿@model IEnumerable<WebApplicationExcoticMandi.Models.Customer>
+
+@{
+    ViewBag.Title = "CustomerList";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>CustomerList</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ApplicationUser.FullName)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.ApplicationUser.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ApplicationUser.MobileNo)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApplicationUser.FullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApplicationUser.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApplicationUser.MobileNo)
+        </td>
+        <td>
+            @Html.ActionLink("Delete", "CustomerDelete", new { UserId = item.CustomerId })
+        </td>
+    </tr>
+}
+
+</table>
