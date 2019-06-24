@@ -1,0 +1,41 @@
+﻿@model PagedList.IPagedList<WebApplicationExcoticMandi.Models.Product>
+@using PagedList.Mvc
+
+@{
+    ViewBag.Title = "Product";
+    
+}
+
+<h2>Product</h2>
+<hr />
+<div class="container">
+    @foreach (var item in Model)
+    {
+        <div class="row">
+            <div class="col-sm-3">
+                <a href="/Home/ProductDetails?ProductId=@item.ProductId"> <img src="@item.ProductImage" class="img-responsive" style="height:200px;" /></a>
+            </div>
+
+            <div class="col-sm-4">
+                <a href="/Home/ProductDetails?ProductId=@item.ProductId">
+                    <h3>@item.ProductName</h3>
+                </a>
+                <p>@Html.Raw(item.details)</p>
+            </div>
+            <div class="col-sm-3">
+                <h3>@item.Price</h3>
+            </div>
+            <div class="col-sm-2">
+                <p class="button">
+                    @Html.ActionLink("Add to cart", "AddToCart", "ShoppingCart", new { id = item.ProductId }, "")
+                </p>
+            </div>
+        </div>
+
+        <hr />
+    }
+</div>
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Products",
+    new { page }))

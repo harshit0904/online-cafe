@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Excotic Mandii Bootstrap Responsive website Template | Home :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Staple Food Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Custom Theme files -->
+    <link href="~/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="~/css/style.css" type="text/css" rel="stylesheet" media="all">
+    <link href="~/css/font-awesome.css" rel="stylesheet"> <!-- font-awesome icons -->
+    <link rel="stylesheet" href="~/css/owl.carousel.css" type="text/css" media="all" /> <!-- Owl-Carousel-CSS -->
+    <!-- //Custom Theme files -->
+    <!-- js -->
+    <script src="~/js/jquery-2.2.3.min.js"></script>
+    <!-- //js -->
+    <!-- web-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900" rel="stylesheet">
+    <!-- //web-fonts -->
+</head>
+<body>
+    <!-- banner -->
+    <div class="banner">
+        <!-- header -->
+        <div class="header">
+            <div class="w3ls-header">
+                <!-- header-one -->
+                <div class="container">
+                    <div class="w3ls-header-left">
+                        <p>Free home delivery at your doorstep For Above RS.300</p>
+                    </div>
+                    <div class="w3ls-header-right">
+                        <ul>
+                            <li class="head-dpdn">
+                                <i class="fa fa-phone" aria-hidden="true"></i> Call us: +91 8824048190
+                            </li>
+                            <li class="head-dpdn">
+                                @Html.Partial("_LoginPartial")
+                            </li>
+                            <!--
+                            <li class="head-dpdn">
+                                <a href="/Home/Signup"><i class="fa fa-user-plus" aria-hidden="true"></i> Signup</a>
+                            </li>
+                                -->
+                            <li class="head-dpdn">
+                                <a href="/Home/Offers"><i class="fa fa-gift" aria-hidden="true"></i> Offers</a>
+                            </li>
+                            <li class="head-dpdn">
+                                <a href="/Home/Help"><i class="fa fa-question-circle" aria-hidden="true"></i> Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <!-- //header-one -->
+            <!-- navigation -->
+            <div class="navigation agiletop-nav">
+                <div class="container">
+                    <nav class="navbar navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header w3l_logo">
+                            <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <h1><a href="/Home/Index">Excotic<span><h3>Mandii</h3></span></a></h1>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="/Home/Index" class="active">Home</a></li>
+                                <!-- Mega Menu -->
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+                                    <ul class="dropdown-menu multi-column columns-3">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <ul class="multi-column-dropdown">
+                                                    <h6>Food type</h6>
+                                                    <li><a href="/Home/Menu">Breakfast</a></li>
+                                                    <li><a href="/Home/Menu">Lunch</a></li>
+                                                    <li><a href="/Home/Menu">Dinner</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <ul class="multi-column-dropdown">
+                                                    <h6>Cuisine</h6>
+                                                    <li><a href="/Home/Menu">Indian Recipes</a></li>
+                                                    <li><a href="/Home/Menu">American Recipes</a></li>
+                                                    <li><a href="/Home/Menu">French Recipes</a></li>
+                                                    <li><a href="/Home/Menu">Italian Recipes</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <ul class="multi-column-dropdown">
+                                                    <h6>Box type</h6>
+                                                    <li><a href="/Home/Menu">Diet</a></li>
+                                                    <li><a href="/Home/Menu">Mini</a></li>
+                                                    <li><a href="/Home/Menu">Regular</a></li>
+                                                    <li><a href="/Home/Menu">Special</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li><a href="/Home/About">About</a></li>
+                                <li><a href="/Home/Contact">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="cart cart box_1">
+                            <form action="#" method="post" class="last">
+                                <input type="hidden" name="cmd" value="_cart" />
+                                <input type="hidden" name="display" value="1" />
+                                <button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- //navigation -->
+        </div>
+        <!-- //header-end -->
+        @RenderSection("banner",required:false)
+
+        </div>
+    @RenderBody()
+   
+    <!-- subscribe -->
+    <div class="subscribe agileits-w3layouts">
+        <div class="container">
+            <div class="col-md-6 social-icons w3-agile-icons">
+                <h4>Keep in touch</h4>
+                <ul>
+                    <li><a href="#" class="fa fa-facebook icon facebook"> </a></li>
+                    <li><a href="#" class="fa fa-google-plus icon googleplus"> </a></li>
+                    <li><a href="#" class="fa fa-instagram icon instagram"> </a></li>
+                </ul>
+                
+            </div>
+            <div class="col-md-6 subscribe-right">
+                <h3 class="w3ls-title">Subscribe to Our <br><span>Newsletter</span></h3>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter your Email..." required="">
+                    <input type="submit" value="Subscribe">
+                    <div class="clearfix"> </div>
+                </form>
+                <img src="images/i1.png" class="sub-w3lsimg" alt="" />
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- //subscribe -->
+    <!-- footer -->
+    <div class="footer agileits-w3layouts">
+        <div class="container">
+            <div class="w3_footer_grids">
+                <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
+                    <h3>company</h3>
+                    <ul>
+                        <li><a href="/Home/About">About Us</a></li>
+                        <li><a href="/Home/Contact">Contact Us</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
+                    <h3>help</h3>
+                    <ul>
+                        <li><a href="/Home/Faq">FAQ</a></li>
+                        <li><a href="/Home/Login">Returns</a></li>
+                        <li><a href="/Home/Offers">Offers</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
+                    <h3>policy info</h3>
+                    <ul>
+                        <li><a href="/Home/Terms">Terms & Conditions</a></li>
+                        <li><a href="/Home/PrivacyPolicy">Privacy Policy</a></li>
+                        <li><a href="/Home/Login">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="/Home/Menu">All Day Menu</a></li>
+                        <li><a href="/Home/Menu">Lunch</a></li>
+                        <li><a href="/Home/Menu">Dinner</a></li>
+                        <li><a href="/Home/Menu">Flavours</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyw3-agile">
+        <div class="container">
+            <p>&copy; OWNER: <H2 style="color:#00ffff;font-family:'Times New Roman', Times, serif">HITESH VASHISHT </H2></p>
+            <p>&copy; ExcoticMandii. All rights reserved | Design by <a ><h3>Himanhu Pandya</h3></a></p>
+        </div>
+    </div>
+    <!-- //footer -->
+    <!-- cart-js -->
+    <script src="~/js/minicart.js"></script>
+    <script>
+        w3ls.render();
+
+        w3ls.cart.on('w3sb_checkout', function (evt) {
+        	var items, len, i;
+
+        	if (this.subtotal() > 0) {
+        		items = this.items();
+
+        		for (i = 0, len = items.length; i < len; i++) {
+        		}
+        	}
+        });
+    </script>
+    <!-- //cart-js -->
+    <!-- Owl-Carousel-JavaScript -->
+    <script src="~/js/owl.carousel.js"></script>
+    <script>
+		$(document).ready(function() {
+			$("#owl-demo").owlCarousel ({
+				items : 3,
+				lazyLoad : true,
+				autoPlay : true,
+				pagination : true,
+			});
+		});
+    </script>
+    <!-- //Owl-Carousel-JavaScript -->
+    <!-- start-smooth-scrolling -->
+    <script src="~/js/SmoothScroll.min.js"></script>
+    <script type="text/javascript" src="~/js/move-top.js"></script>
+    <script type="text/javascript" src="~/js/easing.js"></script>
+    <script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+			};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+    </script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="~/js/bootstrap.js"></script>
+
+    @RenderSection("scripts",required:false)
+</body></html>
